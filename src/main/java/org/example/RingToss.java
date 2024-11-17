@@ -1,65 +1,46 @@
 package org.example;
 
 public class RingToss {
-
     public static int RingTossGreedy(int[] pegs) {
         int pegsLength = pegs.length;
-        int[] pegsThrown = new int[pegsLength];
-
-        int totalPegsThrown = 0;
+        int totalTosses = 0;
         int startIndex = 0;
-        int endIndex = 0;
 
-        int currentIndex;
-        int nextIndex;
-        int currentPeg;
-        int nextIndexPeg;
-
-        while (true) {
-            while (startIndex < pegsLength - 1 && pegs[startIndex] - pegsThrown[startIndex] == 0)
+        while (startIndex < pegsLength) {
+            if (pegs[startIndex] == 0) {
                 startIndex++;
-
-            if (startIndex >= endIndex) {
-                endIndex = startIndex;
+                continue;
             }
 
-            if (endIndex != pegsLength - 1) {
-                currentIndex = endIndex;
-                nextIndex = endIndex + 1;
-                currentPeg = pegs[currentIndex] - pegsThrown[currentIndex];
-                nextIndexPeg = pegs[nextIndex] - pegsThrown[nextIndex];
+            int endIndex = startIndex;
 
-
-                while (nextIndexPeg >= currentPeg) {
-                    endIndex++;
-                    currentIndex = endIndex;
-                    nextIndex = endIndex + 1;
-
-                    if (nextIndex == pegsLength) break;
-
-                    currentPeg = pegs[currentIndex] - pegsThrown[currentIndex];
-                    nextIndexPeg = pegs[nextIndex] - pegsThrown[nextIndex];
-                }
+            while (endIndex < pegsLength - 1 && pegs[endIndex + 1] >= pegs[endIndex]) {
+                endIndex++;
             }
 
-            if (endIndex == pegsLength - 1 && pegs[endIndex] == pegsThrown[endIndex])
-                break;
-
+            int diff;
+            if (endIndex + 1 >= pegsLength)
+                diff = pegs[startIndex];
+            else
+                diff = pegs[endIndex] - pegs[endIndex + 1];
+            int maxToss = Math.max(Math.min(pegs[startIndex], diff), 1);
             for (int i = startIndex; i <= endIndex; i++) {
-                pegsThrown[i] += 1;
+                pegs[i] -= maxToss;
+                if (pegs[i] == 0)
+                    startIndex = i + 1;
             }
-            totalPegsThrown += 1;
+
+            totalTosses += maxToss;
         }
 
-        return totalPegsThrown;
+        return totalTosses;
     }
 
     public static void main(String[] args) {
-        long startTime, endTime;
         int[] pegs;
         int tosses;
 
-        pegs = new int[]{1, 2, 1, 2, 1};
+        pegs = new int[]{2,3,4,2,1};
         tosses = RingToss.RingTossGreedy(pegs);
         System.out.println(tosses);
     }

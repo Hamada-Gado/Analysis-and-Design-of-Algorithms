@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf10812-be58-4671-b605-9140e7ba6981" name="Changes" comment="">
+    <list default="true" id="ecf10812-be58-4671-b605-9140e7ba6981" name="Changes" comment="finally something worked&#10;&#10;note: still timeout happens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RingToss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RingToss.java" afterDir="false" />
     </list>
@@ -33,65 +33,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RingToss.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.Assignment1Tests2024.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Assignment1Tests2024.tesRingTossGreedy2.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ahmedgado/IdeaProjects/DB-Engine&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/ahmedgado/SharedDisk/GUC/Analysis1/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.RingToss.executor": "Debug",
+    "Application.main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.Assignment1Tests2024.executor": "Run",
+    "JUnit.Assignment1Tests2024.tesRingTossGreedy1.executor": "Debug",
+    "JUnit.Assignment1Tests2024.tesRingTossGreedy10.executor": "Run",
+    "JUnit.Assignment1Tests2024.tesRingTossGreedy11.executor": "Run",
+    "JUnit.Assignment1Tests2024.tesRingTossGreedy2.executor": "Run",
+    "JUnit.Assignment1Tests2024.tesRingTossGreedy3.executor": "Run",
+    "JUnit.Assignment1Tests2024.tesRingTossGreedy7.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/ahmedgado/IdeaProjects/DB-Engine",
+    "onboarding.tips.debug.path": "/home/ahmedgado/SharedDisk/GUC/Analysis1/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RingToss">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="Analysis1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Assignment1Tests2024.tesRingTossGreedy11">
     <configuration name="RingToss" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.RingToss" />
-      <module name="Analysis1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.main" />
       <module name="Analysis1" />
       <extension name="coverage">
         <pattern>
@@ -112,11 +91,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Assignment1Tests2024.tesRingTossGreedy2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Assignment1Tests2024.tesRingTossGreedy1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Analysis1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Assignment1Tests2024" />
-      <option name="METHOD_NAME" value="tesRingTossGreedy2" />
+      <option name="METHOD_NAME" value="tesRingTossGreedy1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment1Tests2024.tesRingTossGreedy10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Analysis1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Assignment1Tests2024" />
+      <option name="METHOD_NAME" value="tesRingTossGreedy10" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment1Tests2024.tesRingTossGreedy11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Analysis1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Assignment1Tests2024" />
+      <option name="METHOD_NAME" value="tesRingTossGreedy11" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RingToss" />
+        <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy11" />
+        <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy10" />
         <item itemvalue="JUnit.Assignment1Tests2024" />
-        <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy2" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.main" />
+        <item itemvalue="Application.RingToss" />
+        <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy1" />
       </list>
     </recent_temporary>
   </component>
@@ -159,34 +158,32 @@
       <option name="presentableId" value="Default" />
       <updated>1731753654650</updated>
     </task>
+    <task id="LOCAL-00001" summary="finally something worked&#10;&#10;note: still timeout happens">
+      <option name="closed" value="true" />
+      <created>1731846398898</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731846398898</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finally something worked&#10;&#10;note: still timeout happens" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally something worked&#10;&#10;note: still timeout happens" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/RingToss.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/RingToss.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/RingToss.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/RingToss.java</url>
-          <line>56</line>
+          <line>38</line>
           <properties class="org.example.RingToss" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
