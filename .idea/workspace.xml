@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf10812-be58-4671-b605-9140e7ba6981" name="Changes" comment="finally something worked&#10;&#10;note: still timeout happens">
+    <list default="true" id="ecf10812-be58-4671-b605-9140e7ba6981" name="Changes" comment="refactor -_-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RingToss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RingToss.java" afterDir="false" />
     </list>
@@ -68,7 +68,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Assignment1Tests2024.tesRingTossGreedy11">
+  <component name="RunManager" selected="JUnit.Assignment1Tests2024">
     <configuration name="RingToss" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.RingToss" />
       <module name="Analysis1" />
@@ -134,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy11" />
-        <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy10" />
         <item itemvalue="JUnit.Assignment1Tests2024" />
+        <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy10" />
         <item itemvalue="Application.RingToss" />
+        <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy11" />
         <item itemvalue="JUnit.Assignment1Tests2024.tesRingTossGreedy1" />
       </list>
     </recent_temporary>
@@ -166,26 +166,20 @@
       <option name="project" value="LOCAL" />
       <updated>1731846398898</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor -_-">
+      <option name="closed" value="true" />
+      <created>1731854666160</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731854666160</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finally something worked&#10;&#10;note: still timeout happens" />
-    <option name="LAST_COMMIT_MESSAGE" value="finally something worked&#10;&#10;note: still timeout happens" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/RingToss.java</url>
-          <line>38</line>
-          <properties class="org.example.RingToss" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refactor -_-" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor -_-" />
   </component>
 </project>

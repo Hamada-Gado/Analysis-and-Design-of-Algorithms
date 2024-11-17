@@ -36,11 +36,13 @@ public class RingToss {
         return totalTosses;
     }
 
+
+
     public static void main(String[] args) {
         int[] pegs;
         int tosses;
 
-        pegs = new int[]{2,3,4,2,1};
+        pegs = new int[]{2, 3, 4, 2, 1};
         tosses = RingToss.RingTossGreedy(pegs);
         System.out.println(tosses);
     }
