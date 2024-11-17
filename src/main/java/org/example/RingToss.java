@@ -15,12 +15,10 @@ public class RingToss {
         int currentPeg;
         int nextIndexPeg;
 
-        while (endIndex != pegsLength - 1 || pegs[endIndex] != pegsThrown[endIndex]) {
-            //get the startIndex
+        while (true) {
             while (startIndex < pegsLength - 1 && pegs[startIndex] - pegsThrown[startIndex] == 0)
                 startIndex++;
 
-            // get the endIndex
             if (startIndex >= endIndex) {
                 endIndex = startIndex;
             }
@@ -44,6 +42,9 @@ public class RingToss {
                 }
             }
 
+            if (endIndex == pegsLength - 1 && pegs[endIndex] == pegsThrown[endIndex])
+                break;
+
             for (int i = startIndex; i <= endIndex; i++) {
                 pegsThrown[i] += 1;
             }
@@ -58,7 +59,7 @@ public class RingToss {
         int[] pegs;
         int tosses;
 
-        pegs = new int[]{2, 3, 4, 2, 1};
+        pegs = new int[]{1, 2, 1, 2, 1};
         tosses = RingToss.RingTossGreedy(pegs);
         System.out.println(tosses);
     }
