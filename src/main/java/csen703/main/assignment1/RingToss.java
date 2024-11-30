@@ -1,10 +1,11 @@
-package org.example;
+package csen703.main.assignment1;
 
 public class RingToss {
     public static int RingTossGreedy(int[] pegs) {
         int pegsLength = pegs.length;
         int totalTosses = 0;
         int startIndex = 0;
+        int endIndex = 0;
 
         while (startIndex < pegsLength) {
             if (pegs[startIndex] == 0) {
@@ -12,7 +13,9 @@ public class RingToss {
                 continue;
             }
 
-            int endIndex = startIndex;
+            if (startIndex > endIndex) {
+                endIndex = startIndex;
+            }
 
             while (endIndex < pegsLength - 1 && pegs[endIndex + 1] >= pegs[endIndex]) {
                 endIndex++;
@@ -34,16 +37,5 @@ public class RingToss {
         }
 
         return totalTosses;
-    }
-
-
-
-    public static void main(String[] args) {
-        int[] pegs;
-        int tosses;
-
-        pegs = new int[]{2, 3, 4, 2, 1};
-        tosses = RingToss.RingTossGreedy(pegs);
-        System.out.println(tosses);
     }
 }

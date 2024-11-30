@@ -1,4 +1,4 @@
-import org.example.RingToss;
+import csen703.main.assignment1.RingToss;
 
 import static org.junit.jupiter.api.Assertions.*;
 
