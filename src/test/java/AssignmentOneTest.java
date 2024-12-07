@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Timeout;
 
 import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Timeout.ThreadMode;
-public class Assignment1Tests2024 {
+public class AssignmentOneTest {
 	@Test
 	@Timeout(value = 1, unit = TimeUnit.MILLISECONDS, threadMode = ThreadMode.SEPARATE_THREAD)
 	public void tesRingTossGreedy1() {
