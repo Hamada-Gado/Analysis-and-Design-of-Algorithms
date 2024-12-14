@@ -1,14 +1,11 @@
 package csen703.main.assignment2;
 
-import java.util.Arrays;
-
 public class DynamicArena {
     public static int ClimbDynamicArenaDP(int[] floors) {
         int[] mem = new int[floors.length];
         for (int start = floors.length - 1; start >= 0; start--) {
             helper(start, floors, mem);
         }
-        System.out.println(Arrays.toString(mem));
         return mem[0];
     }
 
@@ -40,13 +37,5 @@ public class DynamicArena {
         }
 
         mem[start] = Math.max(max, mem[start + 1]);
-    }
-
-    public static void main(String[] args) {
-        int[] floors;
-        floors = new int[]{1, 7, 5, 3, 6, 4, 5, 8};
-//        floors = new int[]{1, 2, 7};
-//        floors = new int[]{4, 3, 2, 1};
-        System.out.println("Answer: " + ClimbDynamicArenaDP(floors));
     }
 }
